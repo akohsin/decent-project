@@ -1,0 +1,26 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: decent-project
+    depends_on:
+      - mysql
+    env_file:
+      - configuration.env
+    image: "decent-project:latest"
+    ports:
+      - 8080:8080
+    restart: always
+
+  mysql:
+    container_name: decent-storage-mysql
+    image: mysql/mysql-server:5.7
+    env_file:
+      - configuration.env
+    ports:
+      - "3333:3306"
+    restart: always
+    volumes:
+      - ~/.decent-project-data:/var/lib/mysql

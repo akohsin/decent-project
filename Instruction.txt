@@ -1,0 +1,77 @@
+Project Definition
+Write a small Spring Boot application that will ingest the following claim data JSON and expose them via a REST API.
+The API should be able support the following operations:
+Finding all claims
+Getting a claim by its ID
+Finding all claims matching a given insuredID
+Other requirements:
+The code should be as close to production-grade as possible
+Don’t assume the claims JSON will always come as files, in the future we might want to support reading them from a DB or from an external source.
+The project is estimated at 4-5h of work. If you think anything is not clear of if you have any questions you can email Andy  andy@decent.com.
+
+Claim JSON
+{
+ "id": "1234567",
+ "claim": {
+   "submitDate": "20190510",
+   "insuredFirst": "bob",
+   "insuredLast": "jones",
+   "insuredID": "ABC1234567"
+ },
+ "service": [
+   {
+     "lineNumber": 1,
+     "lineCharge": 145,
+     "svcFromDate": "20190507",
+     "svcToDate": "20190509"
+   },
+   {
+     "lineNumber": 2,
+     "lineCharge": 45,
+     "svcFromDate": "20190507",
+     "svcToDate": "20190510"
+   }
+ ]
+}
+
+{
+ "id": "1234568",
+ "claim": {
+   "submitDate": "20190610",
+   "insuredFirst": "alice",
+   "insuredLast": "smith",
+   "insuredID": "DEF1234568"
+ },
+ "service": [
+   {
+     "lineNumber": 1,
+     "lineCharge": 56,
+     "svcFromDate": "20190607",
+     "svcToDate": "20190609"
+   },
+   {
+     "lineNumber": 2,
+     "lineCharge": 78,
+     "svcFromDate": "20190607",
+     "svcToDate": "20190610"
+   }
+ ]
+}
+
+{
+ "id": "7564568",
+ "claim": {
+   "submitDate": "20190722",
+   "insuredFirst": "bob",
+   "insuredLast": "jones",
+   "insuredID": "ABC1234567"
+ },
+ "service": [
+   {
+     "lineNumber": 1,
+     "lineCharge": 55,
+     "svcFromDate": "20190707",
+     "svcToDate": "20190722"
+   }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "1234567",
+  "claim": {
+    "submitDate": "20190510",
+    "insuredFirst": "bob",
+    "insuredLast": "jones",
+    "insuredID": "ABC1234567"
+  },
+  "service": [
+    {
+      "lineNumber": 1,
+      "lineCharge": 145,
+      "svcFromDate": "20190507",
+      "svcToDate": "20190509"
+    },
+    {
+      "lineNumber": 2,
+      "lineCharge": 45,
+      "svcFromDate": "20190507",
+      "svcToDate": "20190510"
+    }
+  ]
+}

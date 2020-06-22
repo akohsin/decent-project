@@ -1,0 +1,23 @@
+{
+  "id": "1234568",
+  "claim": {
+    "submitDate": "20190610",
+    "insuredFirst": "alice",
+    "insuredLast": "smith",
+    "insuredID": "DEF1234568"
+  },
+  "service": [
+    {
+      "lineNumber": 1,
+      "lineCharge": 56,
+      "svcFromDate": "20190607",
+      "svcToDate": "20190609"
+    },
+    {
+      "lineNumber": 2,
+      "lineCharge": 78,
+      "svcFromDate": "20190607",
+      "svcToDate": "20190610"
+    }
+  ]
+}
